@@ -4,13 +4,13 @@ const app = express();
 
 
 app.use(express.json());
-
+app.set('trust proxy', true);
+app.use('/bundle.js', express.static(`${__dirname}/../public/bundle.js`));
+// app.use('/bundle.js', express.static(__dirname + '/../public/bundle.js'));
 app.use('/:id', express.static('./public'));
 
-const PORT = process.env.REVIEWS_PORT || 50003;
-
 app.post('/api/booking/:id/', (req, res) => {
-  console.log(req.body.checkIn)
+  console.log(req.body);
   // get the record for the hotel corresponding to the id passed through the url
   connection.getTargetHotelInfo(req.params.id, (error, hotel) => {
     if (error) {
@@ -60,6 +60,6 @@ app.post('/api/booking/:id/', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`)
+app.listen(50003, () => {
+  console.log('listening on port 50003')
 })
