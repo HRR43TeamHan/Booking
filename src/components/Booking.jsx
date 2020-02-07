@@ -7,7 +7,6 @@ import CurrentlyViewing from './currentlyViewing.jsx';
 import SessionInputForms from './sessionInputForms.jsx';
 import HotelPromo from './HotelPromo.jsx';
 import BigPriceQuote from './bigPriceQuote.jsx';
-import SmallQuotes from './SmallQuotes.jsx'
 import Calendar from './calendar.jsx';
 
 
@@ -218,21 +217,16 @@ class Booking extends React.Component {
   }
 
   render() {
-    console.log(this.state.prices)
     return (
       <div>
         <BookingWidget>
-          <CurrentlyViewing viewersMessage={this.state.viewersMessage} />
-          <SessionInputForms handleCheckInClick={this.handleCheckInClick.bind(this)} formattedCheckIn={this.state.days[this.state.sessionCheckIn].CheckInOutFormatted} handleCheckOutClick={this.handleCheckOutClick.bind(this)} formattedCheckOut={this.state.days[this.state.sessionCheckOut].CheckInOutFormatted} rooms={this.state.sessionRooms} adults={this.state.sessionAdults} children={this.state.sessionChildren} handleGuestInfoClick={this.handleGuestInfoUpdateClick.bind(this)} />
+          {<CurrentlyViewing viewersMessage={this.state.viewersMessage} />}
+          {<SessionInputForms handleCheckInClick={this.handleCheckInClick.bind(this)} formattedCheckIn={this.state.days[this.state.sessionCheckIn].CheckInOutFormatted} handleCheckOutClick={this.handleCheckOutClick.bind(this)} formattedCheckOut={this.state.days[this.state.sessionCheckOut].CheckInOutFormatted} rooms={this.state.sessionRooms} adults={this.state.sessionAdults} children={this.state.sessionChildren} handleGuestInfoClick={this.handleGuestInfoUpdateClick.bind(this)} />}
           <div style={{height: '8px'}}></div>
-          <HotelPromo deal={this.state.deal} />
-          <BigPriceQuote logo={<i className="fas fa-skull" style={{color: 'purple'}}></i>} price={this.state.prices[0].price}/>
-          <BigPriceQuote logo={<i className="fas fa-space-shuttle" style={{color: 'orange'}}></i>} price={this.state.prices[1].price}/>
-          <BigPriceQuote logo={<i className="fas fa-plane" style={{color: 'blue'}}></i>} price={this.state.prices[2].price}/>
-          <SmallQuotes prices={this.state.prices} />
-          <div style={{fontSize: 13, color: '#767676', marginTop: '0px', textAlign:'left', marginLeft: '10px'}}>Prices are the average nightly price provided by our partner...</div>
-
-
+          {<HotelPromo deal={this.state.deal} />}
+          {<BigPriceQuote />}
+          {<BigPriceQuote />}
+          {<BigPriceQuote />}
         </BookingWidget>
       </div>
     )

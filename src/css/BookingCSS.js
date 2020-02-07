@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export const BookingWidget = styled.div({
   display: "inline-block",
   width: 395,
-  height: 580,
+  height: 560,
   backgroundColor: "white",
   textAlign: "center",
   borderRadius: 0,
