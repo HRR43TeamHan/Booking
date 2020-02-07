@@ -1,31 +1,9 @@
 
-          <div id="pricingSection">
-            <div id="bigQuotes">
-              <div id="siteQuote" style={{ "height": 88, "width": 363, "borderBottom": "1px solid #d6d6d6", "display": "inline-block", "align": "center" }}>
-                <div style={{ "float": "left", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 100, "height": 41, "color": "purple", "marginLeft": 15, "marginTop": 20, "fontSize": 30, "display": "inline-block" }}><i class="fas fa-skull"></i>.com</div>
-                <button style={{ "float": "right", "display": "inline-block", "padding": "8px 16px", "height": 42, "width": 120, "fontWeight": 700, "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "border": "1px solid transparent", "borderRadius": 2, "fontSize": 16, "textAlign": "center", "cursor": "pointer", "borderColor": "#fc0 #e4a000 #e4a000 #fc0", "backgroundColor": "rgb(255, 204, 0)", "color": "black", "marginTop": 20 }}>View Deal</button>
-                <div style={{ "float": "right", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 80, "height": 41, "color": "black", "marginLeft": 15, "marginTop": 25, "fontSize": 24, "display": "inline-block", "fontWeight": 600 }}>${this.state.prices[0].price}</div>
-              </div>
-
-              <div id="siteQuote" style={{ "height": 88, "width": 363, "borderBottom": "1px solid #d6d6d6", "display": "inline-block", "align": "center" }}>
-                <div style={{ "float": "left", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 100, "height": 41, "color": "orange", "marginLeft": 15, "marginTop": 20, "fontSize": 30, "display": "inline-block" }}><i class="fas fa-plane"></i>.com</div>
-                <button style={{ "float": "right", "display": "inline-block", "padding": "8px 16px", "height": 42, "width": 120, "fontWeight": 700, "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "border": "1px solid transparent", "borderRadius": 2, "fontSize": 16, "textAlign": "center", "cursor": "pointer", "borderColor": "#fc0 #e4a000 #e4a000 #fc0", "backgroundColor": "rgb(255, 204, 0)", "color": "black", "marginTop": 20 }}>View Deal</button>
-                <div style={{ "float": "right", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 80, "height": 41, "color": "black", "marginLeft": 15, "marginTop": 25, "fontSize": 24, "display": "inline-block", "fontWeight": 600 }}>${this.state.prices[1].price}</div>
-              </div>
-
-              <div id="siteQuote" style={{ "height": 88, "width": 363, "borderBottom": "1px solid #d6d6d6", "display": "inline-block", "align": "center" }}>
-                <div style={{ "float": "left", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 100, "height": 41, "color": "blue", "marginLeft": 15, "marginTop": 20, "fontSize": 30, "display": "inline-block" }}><i class="fas fa-space-shuttle"></i>.com</div>
-                <button style={{ "float": "right", "display": "inline-block", "padding": "8px 16px", "height": 42, "width": 120, "fontWeight": 700, "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "border": "1px solid transparent", "borderRadius": 2, "fontSize": 16, "textAlign": "center", "cursor": "pointer", "borderColor": "#fc0 #e4a000 #e4a000 #fc0", "backgroundColor": "rgb(255, 204, 0)", "color": "black", "marginTop": 20 }}>View Deal</button>
-                <div style={{ "float": "right", "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "width": 80, "height": 41, "color": "black", "marginLeft": 15, "marginTop": 25, "fontSize": 24, "display": "inline-block", "fontWeight": 600 }}>${this.state.prices[2].price}</div>
-              </div>
-            </div>
-
-
-
             <div id="smallQuotes" style={{ "marginTop": 3, "marginBottom": 15 }}>
 
               <div id="siteQuotes" style={{ "width": 375, "height": 500 }}>
                 <div style={{ "marginBottom": 1 }}>
+
                   <div style={{ "display": "inline-block", "width": 168, "textAlign": "left", "fontSize": 13, "fontFamily": "Arial,Tahoma,Bitstream Vera Sans,sans-serif", "color": "#4A4A4A", "marginLeft": 14, "marginRight": 20, "float": "left" }}>
                     <div style={{ "display": "inline-block", "float": "left", "width": 100 }}>{this.state.prices[3].name}</div>
                     <div style={{ "display": "inline-block", "fontSize": 11, "textAlign": "center", "width": 15 }}><i class="fas fa-external-link-alt"></i></div>

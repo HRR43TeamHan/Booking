@@ -1,11 +1,13 @@
 import React from 'react';
 import { css, jsx } from '@emotion/core';
-import {BigQuoteContainer, LogoContainer} from '../css/bigPriceQuoteCSS.js';
+import {BigQuoteContainer, LogoContainer, BigQuoteButton, PriceQuote} from '../css/bigPriceQuoteCSS.js';
 
 function BigPriceQuote(props) {
   return (
     <BigQuoteContainer>
-      <LogoContainer><i class="fas fa-skull"></i>.com</LogoContainer>
+      <LogoContainer>{props.logo}.com</LogoContainer>
+      <BigQuoteButton>View Deal</BigQuoteButton>
+      <PriceQuote>${props.price}</PriceQuote>
     </BigQuoteContainer>
   )
 }
