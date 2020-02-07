@@ -7,7 +7,7 @@ function CurrentlyViewing(props) {
   return (
     <Viewers>
       <ViewersMessage>
-        <span><i class="fas fa-user-friends"></i></span>
+        <span><i className="fas fa-user-friends"></i></span>
         <span style={{marginRight: 6}}></span>
         <span>{props.viewersMessage}</span>
       </ViewersMessage>

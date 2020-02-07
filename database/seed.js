@@ -1,5 +1,5 @@
 var faker = require('faker');
-const db = require('./index.js').connection;
+const db = require('./index.js');
 
 // POPULATE hotels TABLE WITH 100 HOTELS
 
