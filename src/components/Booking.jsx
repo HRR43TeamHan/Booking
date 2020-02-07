@@ -218,7 +218,6 @@ class Booking extends React.Component {
   }
 
   render() {
-    console.log(this.state.prices)
     return (
       <div>
         <BookingWidget>
