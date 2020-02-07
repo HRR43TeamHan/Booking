@@ -3,7 +3,10 @@ import months from '../months.js';
 import days from '../days.js';
 import { css, jsx } from '@emotion/core';
 import {BookingWidget} from '../css/BookingCSS.js';
-import CurrentlyViewing from './CurrentlyViewing.jsx';
+import CurrentlyViewing from './currentlyViewing.jsx';
+import SessionInputForms from './sessionInputForms.jsx';
+import HotelPromo from './HotelPromo.jsx';
+import BigPriceQuote from './bigPriceQuote.jsx';
 import Calendar from './calendar.jsx';
 
 
@@ -218,7 +221,12 @@ class Booking extends React.Component {
       <div>
         <BookingWidget>
           {<CurrentlyViewing viewersMessage={this.state.viewersMessage} />}
-
+          {<SessionInputForms handleCheckInClick={this.handleCheckInClick.bind(this)} formattedCheckIn={this.state.days[this.state.sessionCheckIn].CheckInOutFormatted} handleCheckOutClick={this.handleCheckOutClick.bind(this)} formattedCheckOut={this.state.days[this.state.sessionCheckOut].CheckInOutFormatted} rooms={this.state.sessionRooms} adults={this.state.sessionAdults} children={this.state.sessionChildren} handleGuestInfoClick={this.handleGuestInfoUpdateClick.bind(this)} />}
+          <div style={{height: '8px'}}></div>
+          {<HotelPromo deal={this.state.deal} />}
+          {<BigPriceQuote />}
+          {<BigPriceQuote />}
+          {<BigPriceQuote />}
         </BookingWidget>
       </div>
     )
